@@ -52,7 +52,7 @@ namespace RateFetcherService.Services
             {
                 try
                 {
-                    // Example with FreeForexAPI 
+                    // Example with ExchangeRate-Api 
                     var response = await client.GetAsync($"{_apiUrl}{pair}");
                     response.EnsureSuccessStatusCode();
 
