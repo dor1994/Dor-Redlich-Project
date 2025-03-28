@@ -1,6 +1,0 @@
-@RateFetcher_HostAddress = http://localhost:5075
-
-GET {{RateFetcher_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
