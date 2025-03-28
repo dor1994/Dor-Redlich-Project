@@ -1,0 +1,27 @@
+[
+  {
+    "PairName": "USD/ILS",
+    "Rate": 3.6743,
+    "LastUpdateTime": "2025-03-28T03:00:02+03:00"
+  },
+  {
+    "PairName": "EUR/ILS",
+    "Rate": 3.9655,
+    "LastUpdateTime": "2025-03-28T03:00:02+03:00"
+  },
+  {
+    "PairName": "GBP/ILS",
+    "Rate": 4.7567,
+    "LastUpdateTime": "2025-03-28T03:00:02+03:00"
+  },
+  {
+    "PairName": "EUR/USD",
+    "Rate": 1.0793,
+    "LastUpdateTime": "2025-03-28T03:00:02+03:00"
+  },
+  {
+    "PairName": "EUR/GBP",
+    "Rate": 0.8338,
+    "LastUpdateTime": "2025-03-28T03:00:02+03:00"
+  }
+]
