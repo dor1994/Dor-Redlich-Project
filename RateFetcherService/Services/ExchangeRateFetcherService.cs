@@ -52,16 +52,17 @@ namespace RateFetcherService.Services
             {
                 try
                 {
-                    // Example with FreeForexAPI (replace with actual API call)
+                    // Example with FreeForexAPI 
                     var response = await client.GetAsync($"{_apiUrl}{pair}");
                     response.EnsureSuccessStatusCode();
 
                     var readData = await response.Content.ReadFromJsonAsync<ExchangeRateFromApi>();
                     if (readData != null)
                     {
+                        var removeLetter = pair.IndexOf('/');
                         var rateData = new ExchangeRate
                         {
-                            PairName = pair,
+                            PairName = pair.Remove(removeLetter, removeLetter+1),
                             LastUpdateTime =  DateTime.Parse(readData.time_last_update_utc),
                             Rate = readData.conversion_rate,
 
